@@ -1,19 +1,5 @@
-/* Reset */
+/* Modern reset */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin:0;padding:0}h1,h2,h3,h4,p,blockquote,figure,ol,ul{margin:0;padding:0}h1,h2,h3,h4,p{font-size:inherit}a{text-decoration:none;color:inherit}img{border:0}
-/* Helpers */
-.__m-auto{margin: 0 auto;}.__m-0{margin:0!important}.__m-s{margin:10px!important}.__m-m{margin:20px!important}.__m-l{margin:40px!important}
-.__mt-0{margin-top:0!important}.__mt-s{margin-top:10px!important}.__mt-m{margin-top:20px!important}.__mt-l{margin-top:40px!important}
-.__ml-0{margin-left:0!important}.__ml-s{margin-left:10px!important}.__ml-m{margin-left:20px!important}.__ml-l{margin-left:40px!important}
-.__mr-0{margin-right:0!important}.__mr-s{margin-right:10px!important}.__mr-m{margin-right:20px!important}.__mr-l{margin-right:40px!important}
-.__mb-0{margin-bottom:0!important}.__mb-s{margin-bottom:10px!important}.__mb-m{margin-bottom:20px!important}.__mb-l{margin-bottom:40px!important}
-.__p-0{padding:0!important}.__p-s{padding:10px!important}.__p-m{padding:20px!important}.__p-l{padding:40px!important}
-.__pt-0{padding-top:0!important}.__pt-s{padding-top:10px!important}.__pt-m{padding-top:20px!important}.__pt-l{padding-top:40px!important}
-.__pl-0{padding-left:0!important}.__pl-s{padding-left:10px!important}.__pl-m{padding-left:20px!important}.__pl-l{padding-left:40px!important}
-.__pr-0{padding-right:0!important}.__pr-s{padding-right:10px!important}.__pr-m{padding-right:20px!important}.__pr-l{padding-right:40px!important}
-.__pb-0{padding-bottom:0!important}.__pb-s{padding-bottom:10px!important}.__pb-m{padding-bottom:20px!important}.__pb-l{padding-bottom:40px!important}
-.__left{float:left}.__right{float:right}.__clearfix:after{content:"";display:table;clear:both}
-.__txt-center{text-align:center!important}.__txt-left{text-align:left!important}.__txt-right{text-align:right!important}
-.__block{display:block}.__inline-block{display:inline-block}
 /* Input elements */
 input, select, textarea {
 
@@ -22,17 +8,11 @@ textarea {
 
 }
 button, input, select, textarea, .button {
-	/*-webkit-appearance: none;
-	-moz-appearance: none;
-	     appearance: none;*/
+
 }
 button, input[type="button"],
 input[type="submit"], .button {
-	/*text-align: center;
-	cursor: pointer;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	     appearance: none;*/
+	
 }
 button:hover, input[type="button"]:hover,
 input[type="submit"]:hover, .button:hover,
@@ -95,9 +75,15 @@ ul, ol {
 ul {
     padding-left: 20px;
 }
-ol {}
-ol > li {}
-ul > li {}
+ol {
+
+}
+ol > li {
+
+}
+ul > li {
+	
+}
 a:link {
 	text-decoration: none;
 }
