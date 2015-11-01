@@ -33,7 +33,6 @@ add_filter('intermediate_image_sizes_advanced', 'tb_filter_image_sizes');
 add_editor_style( 'css/layout.css' );
 
 
-
 // REMOVE JUNK
 remove_action('wp_head', 'rsd_link'); // remove really simple discovery link
 remove_action('wp_head', 'wp_generator'); // remove wordpress version
@@ -97,7 +96,7 @@ add_action('admin_menu', 'tb_disable_comments_admin_menu');
 function tb_disable_comments_admin_menu_redirect() {
 	global $pagenow;
 	if ($pagenow === 'edit-comments.php') {
-		wp_redirect(admin_url()); exit;
+		wp_redirect(home_url()); exit;
 	}
 }
 add_action('admin_init', 'tb_disable_comments_admin_menu_redirect');
