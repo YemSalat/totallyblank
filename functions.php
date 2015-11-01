@@ -1,4 +1,10 @@
 <?php
+
+// :: CONSTANTS
+define('TEMPLATE_URI', get_template_directory_uri());
+define('TEMPLATE_PATH', get_template_directory());
+
+// :: SETUP THEME
 add_action( 'after_setup_theme', 'blank_setup' );
 function blank_setup()
 {
@@ -10,7 +16,7 @@ function blank_setup()
 		);
 }
 
-// REMOVE DEFAULT TUMBNAILS
+// :: REMOVE DEFAULT TUMBNAILS
 function tb_filter_image_sizes( $sizes) {
 
 	unset( $sizes['medium'] );
@@ -20,15 +26,12 @@ function tb_filter_image_sizes( $sizes) {
 }
 add_filter('intermediate_image_sizes_advanced', 'tb_filter_image_sizes');
 
-// // ADDITIONAL THUMBNAILS
+// :: OPTIONAL :: ADDITIONAL THUMBNAILS
 // add_image_size( 'custom-thumb', 580, 420 ); // custom thumnail
 
-// WYSIWYG EDITOR STYLES
+// :: WYSIWYG EDITOR STYLES
 add_editor_style( 'css/layout.css' );
 
-// CONSTANTS
-define('TEMPLATE_URI', get_template_directory_uri());
-define('TEMPLATE_PATH', get_template_directory());
 
 
 // REMOVE JUNK
@@ -112,13 +115,13 @@ function tb_disable_comments_admin_bar() {
 add_action('admin_menu', 'tb_disable_comments_admin_bar');
 
 
-// :: REMOVE POSTS
-function tb_menu_page_removing_posts() {
-    remove_menu_page( 'edit.php' );
-}
-add_action( 'admin_menu', 'tb_menu_page_removing_posts' );
-// :: REMOVE TOOLS
-function tb_menu_page_removing_tools() {
-    remove_menu_page( 'tools.php' );
-}
-add_action( 'admin_menu', 'tb_menu_page_removing_tools' );
+// :: OPTIONAL :: REMOVE POSTS
+// function tb_menu_page_removing_posts() {
+//     remove_menu_page( 'edit.php' );
+// }
+// add_action( 'admin_menu', 'tb_menu_page_removing_posts' );
+// :: OPTIONAL :: REMOVE TOOLS
+// function tb_menu_page_removing_tools() {
+//     remove_menu_page( 'tools.php' );
+// }
+// add_action( 'admin_menu', 'tb_menu_page_removing_tools' );
