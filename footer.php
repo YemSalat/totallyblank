@@ -5,5 +5,7 @@
 		
 		<!-- :: CUSTOM -->
 		<!-- <script src="<?= TEMPLATE_URI ?>/js/custom.js"></script> -->
+
+		<?php wp_footer(); ?>
 	</body>
 </html>
