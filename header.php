@@ -11,7 +11,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
 		<!-- :: ICONS -->
-		<link rel="shortcut icon" href="/favicon.png" type="image/png">
+		<link rel="shortcut icon" href="<?= TEMPLATE_URI ?>/favicon.png" type="image/png">
 
 		<!-- :: CSS -->
 		<link rel="stylesheet" type="text/css" href="<?= TEMPLATE_URI ?>/css/layout.css">
