@@ -1,5 +1,17 @@
 /* Modern reset */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin:0;padding:0}h1,h2,h3,h4,p,blockquote,figure,ol,ul{margin:0;padding:0}h1,h2,h3,h4,p{font-size:inherit}a{text-decoration:none;color:inherit}img{border:0}
+/* Common wisdom */
+* {
+	box-sizing: border-box;
+}
+img {
+	box-sizing: content-box;
+	max-width: 100%;
+	height: auto;
+}
+p:last-child {
+	margin-bottom: 0;
+}
 /* Input elements */
 input, select, textarea {
 
@@ -23,18 +35,6 @@ input[type="submit"]:focus, .button:focus {
 button:active, input[type="button"]:active,
 input[type="submit"]:active, .button:active, {
 	outline: none;
-}
-/* Common wisdom */
-* {
-	box-sizing: border-box;
-}
-img {
-	box-sizing: content-box;
-	max-width: 100%;
-	height: auto;
-}
-p:last-child {
-	margin-bottom: 0;
 }
 /* Content */
 body {

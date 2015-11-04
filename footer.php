@@ -6,7 +6,7 @@
 		<?php wp_footer(); ?>
 		
 		<!-- :: CUSTOM -->
-		<!-- <script src="<?= TEMPLATE_URI ?>/js/custom.js"></script> -->
+		<script src="<?= TEMPLATE_URI ?>/js/theme.js"></script>
 
 	</body>
 </html>
