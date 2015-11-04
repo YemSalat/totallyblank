@@ -69,11 +69,11 @@ p {
 	margin-bottom: 20px;
 }
 ul, ol {
-    text-align: left;
-    list-style-position: outside;
+	text-align: left;
+	list-style-position: outside;
 }
 ul {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 ol {
 

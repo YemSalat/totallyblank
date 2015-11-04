@@ -2,7 +2,7 @@
 	'use strict';
 
 	// :: FASTCLICK
-    FastClick.attach(document.body);
+	FastClick.attach(document.body);
 
 	// Custom stuff
 
