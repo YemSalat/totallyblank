@@ -113,6 +113,15 @@ function tb_disable_comments_admin_bar() {
 }
 add_action('admin_menu', 'tb_disable_comments_admin_bar');
 
+// :: SET ADMIN POST ORDER
+function set_post_order_in_admin( $wp_query ) {
+  if ( is_admin() ) {
+    $wp_query->set( 'orderby', 'menu_order' );
+    $wp_query->set( 'order', 'ASC' );
+  }
+}
+add_filter('pre_get_posts', 'set_post_order_in_admin' );
+
 
 // :: OPTIONAL :: REMOVE POSTS
 // function tb_menu_page_removing_posts() {
