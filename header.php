@@ -7,16 +7,17 @@
 
 		<title><?php wp_title(' - ', true, 'right'); ?></title>
 		
+		<?php wp_head();  ?>
+		
 		<!-- :: GOOGLE FONTS -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
-		<!-- :: ICONS -->
+		<!-- :: ICON -->
 		<link rel="shortcut icon" href="<?= TEMPLATE_URI ?>/favicon.png" type="image/png">
 
 		<!-- :: CSS -->
 		<link rel="stylesheet" type="text/css" href="<?= TEMPLATE_URI ?>/css/layout.css">
 
-		<?php wp_head();  ?>
 	</head>
 	<body>
 			
