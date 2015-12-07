@@ -16,6 +16,16 @@ function blank_setup()
 		);
 }
 
+// :: SET ADMIN POST ORDER
+function set_post_order_in_admin( $wp_query ) {
+  if ( is_admin() ) {
+    $wp_query->set( 'orderby', 'menu_order' );
+    $wp_query->set( 'order', 'ASC' );
+  }
+}
+add_filter('pre_get_posts', 'set_post_order_in_admin' );
+
+
 // :: REMOVE DEFAULT TUMBNAILS
 function tb_filter_image_sizes( $sizes) {
 
